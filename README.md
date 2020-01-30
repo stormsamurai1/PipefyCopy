@@ -1,3 +1,7 @@
+Projeto feito baseado no vídeo da RocketSeat, com o intuito de praticar o desenvolvimento web
+
+Além disso aprender a usar Styled-Components
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
