@@ -1,6 +1,6 @@
 Projeto feito baseado no vídeo da RocketSeat, com o intuito de praticar o desenvolvimento web
 
-Além disso aprender a usar Styled-Components
+Além disso aprender a usar Styled-Components, react-dnd e react-dnd-html5-backend
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
