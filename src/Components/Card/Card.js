@@ -1,11 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useRef,useContext } from 'react'
 import { useDrag, useDrop } from 'react-dnd'
+
+import BoardContext from '../Board/context'
 
 import { Container, Label } from './styles'
 
 export default function Card( { data, index } ){
 
     const ref = useRef()
+    const { move } = useContext(BoardContext)
 
     const [{ isDragging }, dragRef] = useDrag({
         item: {
@@ -32,6 +35,21 @@ export default function Card( { data, index } ){
             
             const targetCenter = (targetSize.bottom - targetSize.top)/2
             
+            const draggedOffSet = monitor.getClientOffset()
+
+            //Altura do elemento arrastado - altura do alvo
+            //Resultado é o tanto do elemento dentro do card
+            const draggedTop = draggedOffSet.y - targetSize.top;
+
+            if ((draggedIndex + 1) === targetIndex && draggedTop < targetCenter){
+                return
+            }
+        
+            if (draggedIndex === targetIndex + 1 && draggedTop > targetCenter){
+                return
+            }
+        
+            move(draggedIndex, targetIndex)
         }
     })   
 
