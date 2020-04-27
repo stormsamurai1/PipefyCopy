@@ -3,13 +3,13 @@ Projeto feito baseado no vídeo da RocketSeat, com o intuito de praticar o desen
 Além disso aprender a usar Styled-Components, react-dnd e react-dnd-html5-backend
 
 ## Tela de tasks
-<img src="./images/fullScreen.png" width="200" height="300" />
+<img src="./images/fullScreen.png" width="800" height="400" />
 
 ## Dragging effect
-<img src="./images/dragging.png" width="200" height="350" />
+<img src="./images/dragging.png" width="800" height="400" />
 
 ## Drop effect
-<img src="./images/dropping.png" width="200" height="350" />
+<img src="./images/dropping.png" width="800" height="400" />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
